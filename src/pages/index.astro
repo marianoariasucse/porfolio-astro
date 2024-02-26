@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Hero } from "../components/Hero.jsx";
+import { Navbar } from "../components/Navbar.jsx";
+import { Features1 } from "../components/Features1.jsx";
+import { Features2 } from "../components/Features2.jsx";
+import { Projects } from "../components/Projects.jsx"
+import { FAQ } from "../components/FAQ.jsx";
+import { Divider } from "../components/Divider";
+import { Footer } from "../components/Footer.jsx";
+import { ScrollUpButton } from "../components/ScrollUpButton";
+import "../styles/Theme.css";
+import "../styles/Diagonals.css";
+
+---
+
+<Layout title="Mariano Arias Dev | Desarrollo de landing page">
+  <Navbar client:load />
+  <Hero client:load />
+  <Features1 client:load />
+  <Divider />
+  <Features2 client:load />
+  <!-- <Testimonials client:load /> TODO: agregar testimonios en cuanto los tenga -->
+  <!-- <FeaturesDiagonal client:load /> -->
+  <Projects client:load />
+  <!-- <Pricing client:load /> -->
+  <FAQ client:load />
+  <Footer />
+  <ScrollUpButton client:load />
+</Layout>
