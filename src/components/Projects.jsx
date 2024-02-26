@@ -15,10 +15,6 @@ const projects = [
   },
 ];
 
-const handleImageClick = (link) => {
-    window.location.href = link;
-}
-
 export const Projects = () => {
   return (
     <section className="w-screen flex justify-center bg-customDarkBg2 relative">
@@ -51,7 +47,6 @@ export const Projects = () => {
                     src={project.image}
                     alt={project.title}
                     title="Click para ver proyecto"
-                    onClick={handleImageClick(project.link)}
                   />
                 </div>
               ))}
